@@ -1,19 +1,33 @@
 var exec = require('child_process').exec
 
-const interface = 'en0'
-
-function enumerate(cb){
-  exec('arp -a -n', function(err, stdout, stderr){
-    var targets = []
+exports.entries = function(cb){
+  exec('arp -an', function(err, stdout, stderr){
+    var entries = []
     stdout.split('\n').map((i) => {
-      var target = i.split(/[ ,]+/)
-      if (target[1] && target[5] == interface)
-        targets.push({
-            ip:  target[1].replace(['(',')'],['',''])
-          , mac: target[3].replace(/^0:/g, '00:').replace(/:0:/g, ':00:').replace(/:0$/g, ':00')
-          , interface:  target[5]
+      var entry = i.split(/[ ,]+/)
+      if (entry[1])
+        entries.push({
+            ip:  entry[1].replace(['(',')'],['',''])
+          , mac: entry[3].replace(/^0:/g, '00:').replace(/:0:/g, ':00:').replace(/:0$/g, ':00')
+          , interface:  entry[5]
         })
     })
-    return cb(targets)
+    return cb(entries)
+  })
+}
+
+exports.onInterface = function(interface, cb){
+  exec('arp -ani ' + interface, function(err, stdout, stderr){
+    var entries = []
+    stdout.split('\n').map((i) => {
+      var entry = i.split(/[ ,]+/)
+      if (entry[1])
+        entries.push({
+            ip:  entry[1].replace(['(',')'],['',''])
+          , mac: entry[3].replace(/^0:/g, '00:').replace(/:0:/g, ':00:').replace(/:0$/g, ':00')
+          , interface:  entry[5]
+        })
+    })
+    return cb(entries)
   })
 }
