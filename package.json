@@ -2,7 +2,7 @@
   "name": "arp",
   "version": "1.0.0",
   "description": "Node Address Resolution Display and Control",
-  "main": "arp.js",
+  "main": "index.js",
   "dependencies": {
     "ip": "^1.1.0"
   },
