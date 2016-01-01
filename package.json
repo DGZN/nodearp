@@ -1,0 +1,29 @@
+{
+  "name": "arp",
+  "version": "1.0.0",
+  "description": "Node Address Resolution Display and Control",
+  "main": "arp.js",
+  "dependencies": {
+    "ip": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DGZN/arp.git"
+  },
+  "keywords": [
+    "ARP",
+    "ARP",
+    "Table",
+    "ARP",
+    "Cache"
+  ],
+  "author": "DGZN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DGZN/arp/issues"
+  },
+  "homepage": "https://github.com/DGZN/arp#readme"
+}
