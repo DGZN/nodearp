@@ -1,6 +1,6 @@
 {
   "name": "nodearp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodeJS Address Resolution Display and Control Getter Methods",
   "main": "index.js",
   "dependencies": {

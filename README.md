@@ -8,9 +8,6 @@ Examples in tests/
  var arp = require('./arp')
 
  /**
- var arp = require('./arp')
-
- /**
  * Get all ARP entries
  * @return {array} entries
  **/
