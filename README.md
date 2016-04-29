@@ -1,7 +1,6 @@
 # arp
-Node Address Resolution Display and Control
-
-#### A node implementation of arp utility getter methods.
+### Node Address Resolution Display and Control
+A node implementation of arp utility getter methods.
 
 ```
  var arp = require('./arp')
