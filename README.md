@@ -2,6 +2,8 @@
 ### Node Address Resolution Display and Control
 A node implementation of arp utility getter methods.
 
+#### Examples in tests/
+
 ```
  var arp = require('./arp')
 
