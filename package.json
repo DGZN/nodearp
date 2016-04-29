@@ -1,7 +1,7 @@
 {
-  "name": "arp",
+  "name": "nodearp",
   "version": "1.0.0",
-  "description": "Node Address Resolution Display and Control",
+  "description": "nodeJS Address Resolution Display and Control Getter Methods",
   "main": "index.js",
   "dependencies": {
     "ip": "^1.1.0"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DGZN/arp.git"
+    "url": "git+https://github.com/DGZN/nodearp.git"
   },
   "keywords": [
     "ARP",
@@ -23,7 +23,7 @@
   "author": "DGZN",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DGZN/arp/issues"
+    "url": "https://github.com/DGZN/nodearp/issues"
   },
-  "homepage": "https://github.com/DGZN/arp#readme"
+  "homepage": "https://github.com/DGZN/nodearp#readme"
 }
