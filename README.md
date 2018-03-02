@@ -2,7 +2,7 @@
 ### Node Address Resolution Display and Control
 A node implementation of arp utility getter methods.
 
-```
+```md
 ### npm install nodearp
 ```
 
