@@ -3,7 +3,7 @@
 A node implementation of arp utility getter methods.
 
 
-### npm install nodearp
+# npm install nodearp
 
 
 Examples in tests/
